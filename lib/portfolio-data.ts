@@ -131,25 +131,62 @@ export const technicalSkills = [
   },
 ]
 
-export const personalSkills = [
+export type Strength = {
+  title: string
+  example: string
+  why: string
+}
+
+export const strengths: Strength[] = [
   {
-    title: 'Client communication',
-    detail: 'First point of contact for clients at H&R Block, handling high call volume professionally.',
+    title: 'Communication',
+    example:
+      'I explain complex concepts to students in a way that clicks, and I respond to client questions with patience and clarity.',
+    why: 'Good work only moves forward when people understand it, whether that is a proof, a policy, or a next step.',
   },
   {
-    title: 'Teaching & mentoring',
-    detail: 'Clarified complex theory-of-computation concepts for students as a Teaching Assistant.',
+    title: 'Organization',
+    example:
+      'I coordinate appointments so busy days run on time, and I keep logistics documentation in order from one day to the next.',
+    why: 'When the details are organized, the people around me can focus on their own work instead of chasing loose ends.',
   },
   {
-    title: 'Coordination & leadership',
-    detail: 'Managed multiple student groups for a 3D game design project and led front-desk scheduling.',
+    title: 'Analytical thinking',
+    example:
+      'In research, I compared methods side by side and dug into why classification broke down for certain kinds of materials.',
+    why: 'I would rather understand why something fails than guess at a fix, because that is what leads to better decisions.',
   },
   {
-    title: 'Accuracy & compliance',
-    detail: 'Reviewed EDI reports, ASNs, and NAFTA certificates of origin to keep shipments accurate and compliant.',
+    title: 'Creativity',
+    example:
+      'I shaped the cozy visual style, the sound, and the cooperative gameplay of Same Brain, my personal game project.',
+    why: 'Creativity is how I make something feel intentional and welcoming, not just functional.',
   },
   {
-    title: 'Research collaboration',
-    detail: 'Compiled technical reports and presented findings to faculty advisors with a research team.',
+    title: 'Attention to detail',
+    example:
+      'I check documentation carefully, test how an application actually behaves, and think through even the smallest gameplay rules.',
+    why: 'Small mistakes add up quickly, and catching them early saves everyone time and builds trust in the final result.',
+  },
+  {
+    title: 'Collaboration',
+    example:
+      'I have contributed to a research team, supported student project groups, and directed an AI-assisted personal project from idea to playable game.',
+    why: 'I enjoy helping a group get somewhere together, and I know when to lead and when to support.',
+  },
+  {
+    title: 'Independent learning',
+    example:
+      'I take on practical web and cloud projects on my own time and keep exploring new tools as I go.',
+    why: 'Teaching myself through hands-on building means I can pick up what a team needs without waiting to be shown.',
+  },
+  {
+    title: 'Thoughtful iteration',
+    example:
+      'I refined Same Brain through specific decisions about sound, player readiness, and how players interact with each other.',
+    why: 'The first version is rarely the best one, and I like making deliberate improvements until something truly works.',
   },
 ]
+
+export const nextInterests =
+  "Looking ahead, I'm especially excited to grow in data analysis, AI prompting and evaluation, quality assurance, and operations. These areas connect naturally to what I already enjoy: my research taught me to compare methods and question results, my front-desk and customer service roles sharpened how I communicate and keep processes organized, and my technical projects gave me hands-on practice testing how systems behave and building them carefully. Directing an AI-assisted project of my own showed me how much the quality of the output depends on clear instructions and honest evaluation. I'm looking for opportunities where I can bring that mix of analytical, communication, organizational, and technical experience together, learn quickly, and help a team make work that is accurate and dependable."
