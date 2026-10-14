@@ -1,7 +1,7 @@
 import { SectionHeading } from '@/components/section-heading'
 import { nextInterests } from '@/lib/portfolio-data'
 
-const focusAreas = ['Data analysis', 'AI prompting & evaluation', 'Quality assurance', 'Operations']
+const focusAreas = ['Data analysis', 'AI prompting & evaluation', 'Software quality assurance', 'Data quality']
 
 export function InterestsSection() {
   return (
@@ -15,7 +15,13 @@ export function InterestsSection() {
             </li>
           ))}
         </ul>
-        <p className="mt-6 max-w-3xl text-pretty leading-relaxed text-muted-foreground">{nextInterests}</p>
+        <div className="mt-6 flex max-w-3xl flex-col gap-4">
+          {nextInterests.map((paragraph) => (
+            <p key={paragraph.slice(0, 32)} className="text-pretty leading-relaxed text-muted-foreground">
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </div>
     </section>
   )

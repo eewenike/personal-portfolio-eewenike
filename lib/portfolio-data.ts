@@ -141,7 +141,21 @@ export const technicalSkills = [
   },
   {
     label: 'Libraries & Skills',
-    items: ['pandas', 'NumPy', 'Flask', 'Agile'],
+    items: [
+      'pandas',
+      'NumPy',
+      'Matplotlib',
+      'Plotly',
+      'MATLAB',
+      'scikit-learn',
+      'PyTorch',
+      'TensorFlow',
+      'Power BI',
+      'Tableau',
+      'Excel',
+      'Flask',
+      'Agile',
+    ],
   },
 ]
 
@@ -202,5 +216,7 @@ export const strengths: Strength[] = [
   },
 ]
 
-export const nextInterests =
-  "Looking ahead, I'm especially excited to grow in data analysis, AI prompting and evaluation, quality assurance, and operations. These areas connect naturally to what I already enjoy: my research taught me to compare methods and question results, my front-desk and customer service roles sharpened how I communicate and keep processes organized, and my technical projects gave me hands-on practice testing how systems behave and building them carefully. Directing an AI-assisted project of my own showed me how much the quality of the output depends on clear instructions and honest evaluation. I'm looking for opportunities where I can bring that mix of analytical, communication, organizational, and technical experience together, learn quickly, and help a team make work that is accurate and dependable."
+export const nextInterests = [
+  "I’m interested in opportunities in data analysis, AI prompting and evaluation, software quality assurance, and data quality. My computer science background, machine learning research, and hands-on projects have given me experience comparing approaches, analyzing results, and testing how applications behave. Through AI-assisted development, I’ve also explored how clear instructions and careful review shape the quality of AI-generated work. I’m looking to bring my technical foundation, attention to detail, and communication skills to a team while continuing to learn and solve practical problems.",
+  "While the areas listed interest me, I’m open to a wide range of opportunities where I can apply my technical knowledge, analytical thinking, and communication skills. I’m eager to explore different career paths, learn new tools, and grow professionally while contributing meaningful work.",
+]

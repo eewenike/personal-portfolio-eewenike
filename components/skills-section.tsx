@@ -23,17 +23,11 @@ export function SkillsSection() {
             >
               <div aria-hidden="true" className={`h-1.5 ${style.bar}`} />
               <div className="flex flex-1 flex-col p-6">
-                <div className="flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-3">
-                    <span className={`flex size-10 items-center justify-center rounded-lg ${style.iconBox}`}>
-                      <Icon className="size-5" aria-hidden="true" />
-                    </span>
-                    <h3 className="font-semibold">{group.label}</h3>
-                  </div>
-                  <span className="font-mono text-xs text-muted-foreground">
-                    {String(group.items.length).padStart(2, '0')}
-                    <span className="sr-only"> skills</span>
+                <div className="flex items-center gap-3">
+                  <span className={`flex size-10 items-center justify-center rounded-lg ${style.iconBox}`}>
+                    <Icon className="size-5" aria-hidden="true" />
                   </span>
+                  <h3 className="font-semibold">{group.label}</h3>
                 </div>
                 <ul className="mt-6 flex flex-wrap gap-2" aria-label={group.label}>
                   {group.items.map((item) => (
