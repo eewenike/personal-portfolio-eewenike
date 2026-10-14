@@ -11,7 +11,7 @@ const items = [
   {
     icon: Compass,
     title: 'Why it matters',
-    body: 'It helps employers and collaborators understand my experience, creativity, and problem-solving abilities, and gives me one link to share on job applications.',
+    body: 'It helps me expand more on my personal and professional skills beyond just a one-page résumé.',
     accent: 'bg-teal/10 text-teal',
   },
   {

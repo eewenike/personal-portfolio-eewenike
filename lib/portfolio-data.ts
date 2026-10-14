@@ -4,6 +4,7 @@ export const profile = {
   phoneHref: 'tel:+15859103095',
   email: 'esomchukwuewenike@gmail.com',
   linkedin: 'https://www.linkedin.com/in/esomchukwuewenike',
+  github: 'https://github.com/eewenike',
   resume: '/esomchukwu-nicole-ewenike-resume.pdf',
 }
 
@@ -78,9 +79,11 @@ export const experience: Experience[] = [
 
 export type Project = {
   title: string
-  stack: string[]
-  dates: string
-  points: string[]
+  stack?: string[]
+  dates?: string
+  points?: string[]
+  paragraphs?: string[]
+  link?: { href: string; label: string }
 }
 
 export const resumeProjects: Project[] = [
@@ -114,7 +117,18 @@ export const resumeProjects: Project[] = [
  * Add projects that are not on the résumé here — they appear on /projects.
  * Each entry uses the same shape as resumeProjects.
  */
-export const additionalProjects: Project[] = []
+export const additionalProjects: Project[] = [
+  {
+    title: 'Same Brain',
+    stack: ['Multiplayer word game', '2–8 players', 'AI-assisted development'],
+    paragraphs: [
+      'Same Brain is a cooperative multiplayer word game for 2–8 players. Everyone joins using a room code on their own device, secretly submits a word, and then reveals their answer together. Players use the connections between those words to guide their next choices, working toward the moment when everyone picks the same word.',
+      'I shaped the concept, gameplay rules, visual direction, and feature decisions through AI-assisted development. A central challenge was keeping answers, player readiness, and countdowns synchronized while preventing reused words. I also focused on making the experience welcoming through cozy visuals, optional background music, countdown cues, and celebration sounds.',
+      'The project helped me explore how small design decisions affect the way people play together. For example, allowing players to edit their answers after tapping Ready makes the experience more forgiving. My next steps would be testing with real groups, improving connection suggestions, and exploring a highlight reel of the group’s best matches.',
+    ],
+    link: { href: 'https://profound-parfait-124b01.netlify.app/', label: 'Play Same Brain' },
+  },
+]
 
 export const technicalSkills = [
   {

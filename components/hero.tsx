@@ -1,4 +1,4 @@
-import { ArrowRight, Download, GraduationCap, Link2 as Linkedin, Mail } from 'lucide-react'
+import { ArrowRight, CodeXml, Download, GraduationCap, Link2 as Linkedin, Mail } from 'lucide-react'
 import { education, profile } from '@/lib/portfolio-data'
 
 export function Hero() {
@@ -73,6 +73,17 @@ export function Hero() {
               >
                 <Linkedin className="size-4 text-muted-foreground" aria-hidden="true" />
                 linkedin.com/in/esomchukwuewenike
+              </a>
+            </li>
+            <li>
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 hover:text-primary"
+              >
+                <CodeXml className="size-4 text-muted-foreground" aria-hidden="true" />
+                github.com/eewenike
               </a>
             </li>
           </ul>

@@ -1,4 +1,4 @@
-import { Download, Eye, Link2 as Linkedin, Mail, Phone } from 'lucide-react'
+import { CodeXml, Download, Eye, Link2 as Linkedin, Mail, Phone } from 'lucide-react'
 import { profile } from '@/lib/portfolio-data'
 
 export function ContactSection() {
@@ -47,6 +47,7 @@ export function ContactSection() {
               value="in/esomchukwuewenike"
               external
             />
+            <ContactLink href={profile.github} icon={CodeXml} label="GitHub" value="github.com/eewenike" external />
           </ul>
         </div>
       </div>
