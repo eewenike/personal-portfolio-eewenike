@@ -15,7 +15,7 @@ const links = [
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-4 px-5">
+      <div className="mx-auto flex min-h-16 max-w-5xl flex-wrap items-center justify-between gap-x-2 gap-y-2 px-3 py-2 sm:px-5">
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
           <span
             aria-hidden="true"
@@ -25,8 +25,8 @@ export function SiteHeader() {
           </span>
           <span className="hidden sm:inline">Esomchukwu Ewenike</span>
         </Link>
-        <nav aria-label="Main" className="hidden md:block">
-          <ul className="flex items-center gap-6 text-sm text-muted-foreground">
+        <nav aria-label="Main" className="order-last w-full overflow-x-auto">
+          <ul className="flex items-center justify-between gap-5 whitespace-nowrap py-2 text-sm text-muted-foreground">
             {links.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="transition-colors hover:text-primary">
