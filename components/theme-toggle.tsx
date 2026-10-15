@@ -11,7 +11,7 @@ const CHANGE_EVENT = 'portfolio-theme-change'
 
 const options: { value: Theme; label: string; Icon: typeof Coffee }[] = [
   { value: 'professional', label: 'Professional', Icon: Briefcase },
-  { value: 'coffee', label: 'Coffee Shop', Icon: Coffee },
+  { value: 'coffee', label: 'Relaxed', Icon: Coffee },
 ]
 
 function readTheme(): Theme {
@@ -53,7 +53,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       role="group"
       aria-label="Site theme"
       className={cn(
-        'inline-flex items-center rounded-full border border-border bg-card p-0.5 text-xs font-medium sm:text-sm',
+        'inline-flex items-center rounded-full border border-border bg-card p-0.5 text-xs font-medium',
         className,
       )}
     >
@@ -66,7 +66,7 @@ export function ThemeToggle({ className }: { className?: string }) {
             aria-pressed={active}
             onClick={() => applyTheme(value)}
             className={cn(
-              'inline-flex min-h-9 items-center gap-1.5 rounded-full px-2.5 sm:px-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring',
+              'inline-flex min-h-8 items-center gap-1 rounded-full px-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring',
               active
                 ? 'bg-primary text-primary-foreground shadow-sm'
                 : 'text-muted-foreground hover:text-foreground',

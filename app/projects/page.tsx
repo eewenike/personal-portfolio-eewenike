@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowLeft, FolderPlus } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { ProjectCard } from '@/components/project-card'
 import { SectionHeading } from '@/components/section-heading'
 import { SiteFooter } from '@/components/site-footer'
@@ -39,11 +39,8 @@ export default function ProjectsPage() {
               <ProjectCard key={project.title} project={project} index={index + 2} />
             ))}
           </div>
-          <div className="mt-6 flex flex-col items-center rounded-xl border border-dashed border-border bg-card px-6 py-10 text-center">
-            <span className="flex size-12 items-center justify-center rounded-full bg-terracotta/10 text-terracotta">
-              <FolderPlus className="size-6" aria-hidden="true" />
-            </span>
-            <p className="mt-4 max-w-md text-pretty text-sm leading-relaxed text-muted-foreground">
+          <div className="mt-6">
+            <p className="text-pretty text-sm leading-relaxed text-muted-foreground">
               More projects will be added here soon. In the meantime, feel free to reach out at{' '}
               <a href={`mailto:${profile.email}`} className="font-medium text-primary hover:underline">
                 {profile.email}
